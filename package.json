@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/fabriciofmsilva/simple/issues"
   },
-  "homepage": "https://github.com/fabriciofmsilva/simple"
+  "homepage": "https://github.com/fabriciofmsilva/simple",
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.7.0"
+  }
 }

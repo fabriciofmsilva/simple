@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/**
+ * CONTENTS
+ *
+ * CORE (BOSONS) SETTINGS
+ * Default..............inuitcss’ default settings.
+ * Global...............Globally-available variables and settings/config.
+ * Colors...............Manage our color palette in isolation.
+ * Responsive...........Set up and name our breakpoints.
+ *
+ * TOOLS (BOSONS)
+ * Functions............inuitcss’ default functions.
+ * Mixins...............inuitcss’ default mixins.
+ * Mixins...............Our extension of inuitcss’ mixins.
+ * Responsive...........Responsive tooling (requires responsive settings).
+ * Aliases..............Aliases onto longer inuitcss variables and mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Reset................A pared back reset to remove margins.
+ * Box-sizing...........Better default `box-sizing`.
+ * Shared...............Sensibly and tersely share global commonalities.
+ *
+ * BASE (ATOMS)
+ * Page.................Page-level styles (HTML element).
+ * Page.................Our extension of the inuitcss page module.
+ * Headings.............Heading styles
+ * Type.................Misc type styles
+ * Links................Hyperlink styles
+ * Lists................inuitcss list styles
+ * Images...............inuitcss images
+ * Quotes...............Styling for blockquotes, etc.
+ *
+ * MODULES (MOLECULES)
+ * Wrappers.............Wrappers and page constraints.
+ * Buttons..............inuitcss’ buttons module.
+ * Layout...............inuitcss’ layout tool.
+ * Box..................inuitcss’ box object.
+ * Media................The media object.
+ * Flag.................The flag object.
+ * UI list..............inuitcss’ UI list.
+ *
+ * COMPONENTS (ORGANISMS)
+ * Page-head............Page header styles.
+ * Bands................Full-width page bands.
+ * Promo................Lead promo blocks on the home page.
+ * Page-foot............Page footer styles.
+ * Page-micro...........Page copyright styles.
+ * Site-nav.............Site’s main nav area.
+ * Buttons..............Extension of inuitcss’ buttons.
+ * Boxes................Extension of inuitcss’ box object
+ * Post.................Post-specific styles.
+ * Pull-quote...........Large, featured quotes.
+ * Carousel.............Pure CSS carousel component.
+ * Iconic...............Iconic icon styles.
+ * Sprites..............Image sprite styles.
+ * Feature list.........Big blocky lists of feature items.
+ * Annotate.............Pure CSS figure annotations.
+ * Ads..................AdPacks overrides.
+ * Client-list..........Amazing people I’ve had the pleasure of working with.
+ *
+ * LAYOUTS (TEMPLATES)
+ *
+ * HELPERS (TRUMPS)
+ * Clearfix.............I can’t believe we still need this in 2014.
+ * Widths...............Simple width helper classes.
+ * Widths-responsive....Polyfill for responsive width classes.
+ * Spacing..............Micro-level spacing.
+ * Show/hide............Helpers to show and side stuff.
+ */
+/* ==========================================================================
+   #GENERIC
+   ========================================================================== */
+/* ==========================================================================
+   #VARIABLES
+   ========================================================================== */
+/**
+ * Colors
+ */
+/**
+ * UI Color application
+ */
+/**
+ * Scaffolding
+ */
+/* Links */
+/**
+ * Typography
+ */
+/**
+ * Icons
+ */
+/**
+ * Animations
+ */
+/**
+ * Visibility
+ */
+/* ==========================================================================
+   #MIXINS
+   ========================================================================== */
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+@import url(bower_components/normalize.css/normalize.css);
+.sg-color:before, .sg-color:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.sg-color:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   #GENERIC
+   ========================================================================== */
+/* ==========================================================================
+   #BASE
+   ========================================================================== */
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
+/* ==========================================================================
+   #TEXT
+   ========================================================================== */
+/**
+ * Headings 1–6
+ */
+/**
+ * Paragraph
+ */
+/**
+ * Quote Elements
+ */
+/**
+ * Inline Elements
+ */
+/**
+ * Code Elements
+ */
+/**
+ * Time
+ */
+/**
+ * Preformatted Text
+ */
+/**
+ * Hr
+ */
+/* ==========================================================================
+   #MODULES
+   ========================================================================== */
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ==========================================================================
+   #HELPERS
+   ========================================================================== */
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+/* ==========================================================================
+ Print styles.
+ Inlined to avoid the additional HTTP request:
+ http://www.phpied.com/delay-loading-your-print-css/
+ ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+         http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* ==========================================================================
+   #DOC
+   ========================================================================== */
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+.sg-color {
+  padding: 0;
+  list-style: none;
+}
+.sg-color__item {
+  float: left;
+}
+.sg-color__swatch {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.sg-color__swatch--red {
+  background-color: #f44336;
+}
+.sg-color__swatch--pink {
+  background-color: #e91e63;
+}
+.sg-color__swatch--purple {
+  background-color: #9c27b0;
+}
+.sg-color__swatch--deep-purple {
+  background-color: #673ab7;
+}
+.sg-color__swatch--indigo {
+  background-color: #3f51b5;
+}
+.sg-color__swatch--blue {
+  background-color: #2196f3;
+}
+.sg-color__swatch--light-blue {
+  background-color: #03a9f4;
+}
+.sg-color__swatch--cyan {
+  background-color: #00bcd4;
+}
+.sg-color__swatch--teal {
+  background-color: #009688;
+}
+.sg-color__swatch--green {
+  background-color: #4caf50;
+}
+.sg-color__swatch--light-green {
+  background-color: #8bc34a;
+}
+.sg-color__swatch--lime {
+  background-color: #cddc39;
+}
+.sg-color__swatch--yellow {
+  background-color: #ffeb3b;
+}
+.sg-color__swatch--amber {
+  background-color: #ffc107;
+}
+.sg-color__swatch--orange {
+  background-color: #ff9800;
+}
+.sg-color__swatch--deep-orange {
+  background-color: #ff5722;
+}
+.sg-color__swatch--brown {
+  background-color: #795548;
+}
+.sg-color__swatch--white {
+  background-color: white;
+}
+.sg-color__swatch--gray {
+  background-color: #9e9e9e;
+}
+.sg-color__swatch--blue-gray {
+  background-color: #607d8b;
+}
+.sg-color__swatch--black {
+  background-color: black;
+}
+
+/* ==========================================================================
+   #FONTS
+   ========================================================================== */
+.sg-font--primary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sg-font--secondary {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}

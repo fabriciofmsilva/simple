@@ -1,0 +1,19 @@
+{
+  "name": "simple",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fabriciofmsilva/simple",
+  "authors": [
+    "Fabrício Silva <fabriciofmsilva@gmail.com>"
+  ],
+  "description": "CSS for Simple",
+  "main": "main.less",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  },
+  "devDependencies": {
+    "normalize.css": "~3.0.2",
+    "normalize.scss": "~3.0.2+normalize.3.0.2"
+  }
+}

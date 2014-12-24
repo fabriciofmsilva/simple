@@ -1,0 +1,130 @@
+/* ==========================================================================
+   #VARIABLES
+   ========================================================================== */
+
+/**
+ * Colors
+ */
+
+$color-palette: (
+  red         : #F44336,
+  pink        : #E91E63,
+  purple      : #9C27B0,
+  deep-purple : #673AB7,
+  indigo      : #3F51B5,
+  blue        : #2196F3,
+  light-blue  : #03A9F4,
+  cyan        : #00BCD4,
+  teal        : #009688,
+  green       : #4CAF50,
+  light-green : #8BC34A,
+  lime        : #CDDC39,
+  yellow      : #FFEB3B,
+  amber       : #FFC107,
+  orange      : #FF9800,
+  deep-orange : #FF5722,
+  brown       : #795548,
+
+  white       : #fff,
+  gray        : #9E9E9E,
+  blue-gray   : #607D8B,
+  black       : #000
+);
+
+
+
+
+
+/**
+ * UI Color application
+ */
+
+$color-primary : map-get($color-palette, indigo);
+$color-accent  : map-get($color-palette, pink);
+
+$color-success : map-get($color-palette, green);
+$color-info    : map-get($color-palette, cyan);
+$color-warning : map-get($color-palette, orange);
+$color-danger  : map-get($color-palette, red);
+
+
+
+
+
+/**
+ * Scaffolding
+ */
+
+$body-bg : #fff;
+$text-color : map-get($color-palette, black);
+
+/* Links */
+$link-color:            $color-primary;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+
+
+
+/**
+ * Typography
+ */
+
+$font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif      : Georgia, Times, "Times New Roman", serif;
+$font-family-monospace  : Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base       : $font-family-sans-serif;
+
+$font-size-base         : 16px;
+$font-size-small        : 14px;
+$font-size-large        : 18px;
+
+$font-size-h1 : 36px;
+$font-size-h2 : 30px;
+$font-size-h3 : 24px;
+$font-size-h4 : 18px;
+$font-size-h5 : $font-size-base;
+$font-size-h6 : 14;
+
+
+$line-height-base : 1.4;
+
+
+
+
+
+
+
+/**
+ * Icons
+ */
+
+
+
+
+
+
+/**
+ * Animations
+ */
+
+$animation-fade : opacity 0.3s ease-out;
+$animation-move : all 0.8s ease-in-out;
+
+
+
+
+
+/**
+ * Visibility
+ */
+
+
+
+
+
+
+
+
+

@@ -13,13 +13,22 @@
 
   &__swatch {
     display: block;
-    width: 50px;
-    height: 50px;
+    padding: 6px;
+    width: 80px;
+    height: 80px;
 
     @each $color-name, $color in $color-palette {
       &--#{$color-name} {
         background-color: #{$color};
       }
+    }
+  }
+
+  &__label {
+    color: #fff;
+
+    &--dark {
+      color: #000;
     }
   }
 }

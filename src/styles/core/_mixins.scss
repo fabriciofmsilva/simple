@@ -14,7 +14,7 @@
   *    `:before` to contain the top-margins of child elements.
   */
 
-@mixin clearfix() {
+@mixin clearfix {
   &:before,
   &:after {
     content: " ";/* 1 */
@@ -69,4 +69,18 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+/**
+ * WebKit-style focus
+ */
+
+@mixin tab-focus {
+  /* Default */
+  outline: thin dotted;
+  /* WebKit */
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }

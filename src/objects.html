@@ -18,13 +18,13 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header">
+    <header class="sg-header">
       <div class="container">
-        <nav>
-          <a href="index.html">home</a>
-          <a href="base.html">base</a>
-          <a href="objects.html">objects</a>
-          <a href="components.html">components</a>
+        <nav class="nav">
+          <a class="nav__link" href="index.html">home</a>
+          <a class="nav__link" href="base.html">base</a>
+          <a class="nav__link" href="objects.html">objects</a>
+          <a class="nav__link" href="components.html">components</a>
         </nav>
       </div>
     </header>
@@ -162,6 +162,10 @@
 
 
       <h1 class="page__header">Media</h1>
+      <h2>Thumbnails</h2>
+
+
+
       <h2>Figure With Caption</h2>
       <figure>
         <img src="img/img_4x3.png" alt="4x3 Image">  <figcaption>This is an example of an image with a caption. Photo captions, also known as cutlines, are a few lines of text used to explain or elaborate on published photographs.</figcaption>
@@ -224,6 +228,31 @@
 
 
       <h1 class="page__header">Navigation</h1>
+      <h2>Nav</h2>
+      <div class="sg-example">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint"></pre>
+      </div>
+
+
+
       <h2>Primary Nav</h2>
       <nav id="nav" class="nav">
         <ul class="nav-list">
@@ -270,6 +299,10 @@
 
 
 
+      <h2>Pager</h2>
+
+
+
       <h2>Tabs</h2>
       <div class="tabs">
         <ul class="tab-list">
@@ -281,7 +314,71 @@
 
 
 
+      <h2>Labels</h2>
+
+
+
+      <h2>Badges</h2>
+
+
+
+
+
       <h1 class="page__header">Components</h1>
+      <h2>Dropdowns</h2>
+      <div class="sg-example">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="highlight"></div>
+
+
+
+      <h2>Button groups</h2>
+      <div class="sg-example">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>
+      </div>
+      <div class="highlight"></div>
+
+
+
+      <h2>Button dropdowns</h2>
+      <div class="sg-example">
+        <!-- Single button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            Action <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="highlight"></div>
+
+
+      <h2>Input groups</h2>
+
+
+
       <h2>Social Share</h2>
       <div class="social-share">
         <ul class="social-share-list">
@@ -331,8 +428,26 @@
 
       <h1 class="page__header">Messaging</h1>
       <h2>Alert</h2>
-      <div class="alert alert-">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      <div class="sg-example">
+        <div class="alert alert-success" role="alert">
+          Well done! You successfully read this important alert message.
+        </div>
+        <div class="alert alert-info" role="alert">
+          Heads up! This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-warning" role="alert">
+          Warning! Better check yourself, you're not looking too good.
+        </div>
+        <div class="alert alert-danger" role="alert">
+          Oh snap! Change a few things up and try submitting again.
+        </div>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;div class="alert alert-success" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-info" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;...&lt;/div&gt;</pre>
       </div>
     </div>
 

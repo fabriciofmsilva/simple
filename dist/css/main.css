@@ -131,6 +131,9 @@
 /**
  * Center-align a block level element
  */
+/**
+ * WebKit-style focus
+ */
 /* ==========================================================================
    #GENERIC
    ========================================================================== */
@@ -563,6 +566,25 @@ th {
   /* 3 */
 }
 
+/**
+ * Links
+ */
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #2b387c;
+  text-decoration: underline;
+}
+a:focus {
+  /* Default */
+  outline: thin dotted;
+  /* WebKit */
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 /* ==========================================================================
    #TEXT
    ========================================================================== */
@@ -751,9 +773,13 @@ select[size] {
   padding: 10px 16px;
   font-size: 18px;
 }
+.btn--block {
+  display: block;
+  width: 100%;
+}
 
 /* ==========================================================================
-   #MODULES
+   Objects
    ========================================================================== */
 /* ==========================================================================
    #GRID
@@ -765,6 +791,41 @@ select[size] {
   max-width: 1200px;
 }
 
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__list:before, .nav__list:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.nav__list:after {
+  clear: both;
+}
+.nav__item {
+  position: relative;
+  display: block;
+}
+.nav__link {
+  position: relative;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+.nav__link:hover, .nav__link:focus {
+  background-color: #ebebeb;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
 /* ==========================================================================
    #HELPERS
    ========================================================================== */
@@ -867,8 +928,9 @@ select[size] {
 }
 .sg-color__swatch {
   display: block;
-  width: 50px;
-  height: 50px;
+  padding: 6px;
+  width: 80px;
+  height: 80px;
 }
 .sg-color__swatch--red {
   background-color: #f44336;
@@ -933,6 +995,12 @@ select[size] {
 .sg-color__swatch--black {
   background-color: black;
 }
+.sg-color__label {
+  color: #fff;
+}
+.sg-color__label--dark {
+  color: #000;
+}
 
 /* ==========================================================================
    #FONTS
@@ -948,17 +1016,24 @@ select[size] {
    #HERO
    ========================================================================== */
 .sg-hero {
-  padding: 20px 0;
+  padding: 40px 0;
   color: #fff;
   background-color: #3f51b5;
 }
 .sg-hero__header {
-  margin-bottom: .2em;
+  margin: .2em 0;
   font-size: 60px;
 }
 .sg-hero__description {
   font-size: 1.4em;
   font-weight: 300;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.sg-header .nav__link {
+  display: inline-block;
 }
 
 /* ==========================================================================

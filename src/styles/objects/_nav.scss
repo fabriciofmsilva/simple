@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+.nav {
+  &__list {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: lighten(map-get($color-palette, grey), 30%);
+      text-decoration: none;
+    }
+  }
+}

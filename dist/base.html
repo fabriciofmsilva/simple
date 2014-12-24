@@ -18,13 +18,13 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header">
+    <header class="sg-header">
       <div class="container">
-        <nav>
-          <a href="index.html">home</a>
-          <a href="base.html">base</a>
-          <a href="objects.html">objects</a>
-          <a href="components.html">components</a>
+        <nav class="nav">
+          <a class="nav__link" href="index.html">home</a>
+          <a class="nav__link" href="base.html">base</a>
+          <a class="nav__link" href="objects.html">objects</a>
+          <a class="nav__link" href="components.html">components</a>
         </nav>
       </div>
     </header>
@@ -127,7 +127,7 @@
         </li>
         <li class="sg-color__item">
           <div class="sg-color__swatch sg-color__swatch--white">
-            <span class="sg-color__label">White</span>
+            <span class="sg-color__label sg-color__label--dark">White</span>
           </div>
         </li>
         <li class="sg-color__item">
@@ -220,6 +220,22 @@
 
 
 
+      <h3>Address</h3>
+      <div class="sg-example">
+        <address>
+          Company Name, Inc.<br>
+          811 7th Ave, Suite 700<br>
+          Manhattan, NY 10019<br>
+          USA
+        </address>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;address&gt;</pre>
+      </div>
+
+
+
       <h3>Blockquote</h3>
       <div class="sg-example">
         <blockquote>
@@ -231,6 +247,46 @@
   &lt;blockquote&gt;
     &lt;p&gt;A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.  &lt;/p&gt;
   &lt;/blockquote&gt;</pre>
+      </div>
+
+
+
+      <h3>Details</h3>
+      <div class="sg-example">
+        <details open>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;details&gt;</pre>
       </div>
 
 
@@ -512,6 +568,32 @@
 
 
 
+      <h2>Missing Image</h2>
+      <div class="sg-example">
+        <img src="" alt="This is an example of a missing image...">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;img src="..." alt="..."&gt;</pre>
+      </div>
+
+
+
+      <h2>SVG</h2>
+      <div class="sg-example">
+        <svg width="200px" height="200px">
+          <circle cx="100" cy="100" r="100" fill="#eee"></circle>
+        </svg>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;svg width="200px" height="200px"&gt;
+    &lt;circle cx="100" cy="100" r="100" fill="#eee"&gt;&lt;/circle&gt;
+  &lt;/svg&gt;</pre>
+      </div>
+
+
+
 
 
       <h1 class="page__header">Tables</h1>
@@ -731,6 +813,104 @@
       </div>
 
 
+      <h2>Control states</h2>
+      <h3>Focus state</h3>
+      <div class="sg-example">
+        <div class="form__group">
+          <input class="form__control" id="text" type="text" placeholder="Demonstrative focus state">
+        </div>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
+      <h3>Disabled state</h3>
+      <div class="sg-example">
+        <div class="form__group">
+          <input class="form__control" id="text" type="text" placeholder="Disabled input here..." disabled>
+        </div>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
+      <h3>Readonly state</h3>
+      <div class="sg-example">
+        <div class="form__group">
+          <input class="form__control" id="text" type="text" placeholder="Disabled input here..." readonly>
+        </div>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
+      <h3>Validation states</h3>
+      <div class="sg-example">
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess1">Input with success</label>
+          <input type="text" class="form-control" id="inputSuccess1">
+        </div>
+        <div class="form-group has-warning">
+          <label class="control-label" for="inputWarning1">Input with warning</label>
+          <input type="text" class="form-control" id="inputWarning1">
+        </div>
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError1">Input with error</label>
+          <input type="text" class="form-control" id="inputError1">
+        </div>
+        <div class="has-success">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="checkboxSuccess" value="option1">
+              Checkbox with success
+            </label>
+          </div>
+        </div>
+        <div class="has-warning">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="checkboxWarning" value="option1">
+              Checkbox with warning
+            </label>
+          </div>
+        </div>
+        <div class="has-error">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id="checkboxError" value="option1">
+              Checkbox with error
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
+      <h2>Control sizing</h2>
+      <div class="sg-example">
+        <input class="form-control input-lg" type="text" placeholder=".input-lg">
+        <input class="form-control" type="text" placeholder="Default input">
+        <input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+        <select class="form-control input-lg">...</select>
+        <select class="form-control">...</select>
+        <select class="form-control input-sm">...</select>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
 
 
 
@@ -758,6 +938,7 @@
       </div>
       <div class="highlight"></div>
 
+
       <h2>Sizes</h2>
       <div class="sg-example">
         <button type="button" class="btn btn--lg">Large button</button>
@@ -767,12 +948,55 @@
       </div>
       <div class="highlight"></div>
 
+      <h3>Block</h3>
+      <div class="sg-example">
+        <button type="button" class="btn btn--block">Block level button</button>
+      </div>
+      <div class="highlight"></div>
+
+
+      <h2>States</h2>
+      <h3>Active state</h3>
+      <div class="sg-example">
+        <button type="button" class="btn is-active">Button</button>
+      </div>
+      <div class="highlight"></div>
+
+      <h3>Disable</h3>
+      <div class="sg-example">
+        <button type="button" class="btn" disabled="disabled">Button</button>
+      </div>
+      <div class="highlight"></div>
 <!--
       <p><a href="#" class="btn">Button</a></p>
       <p><a href="#" class="btn alt">Alternate Button</a></p>
       <p><a href="#" class="btn disabled">Disabled Button</a></p>
       <p><a href="#" class="text-btn">Text Button</a></p>
 -->
+
+
+
+
+      <h1 class="page__header">Meter and Progress</h1>
+      <h2>Meter</h2>
+      <div class="sg-example">
+        <p><meter value="0" max="100" low="70" high="90">0%</meter> A meter displaying 0%.</p>
+        <p><meter value="50" max="100" low="70" high="90">50%</meter> A meter displaying 50%.</p>
+        <p><meter value="85" max="100" low="70" high="90">85%</meter> A meter displaying 85%.</p>
+        <p><meter value="100" max="100" low="70" high="90">100%</meter> A meter displaying 100%.</p>
+      </div>
+      <div class="highlight"></div>
+
+
+
+      <h2>Progress</h2>
+      <div class="sg-example">
+        <p><progress value="0" max="100">0%</progress> A progress displaying 0%.</p>
+        <p><progress value="50" max="100">50%</progress> A progress displaying 50%.</p>
+        <p><progress value="85" max="100">85%</progress> A progress displaying 85%.</p>
+        <p><progress value="100" max="100">100%</progress> A progress displaying 100%.</p>
+      </div>
+      <div class="highlight"></div>
     </div>
 
 

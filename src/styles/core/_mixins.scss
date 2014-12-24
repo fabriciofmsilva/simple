@@ -2,26 +2,71 @@
    #MIXINS
    ========================================================================== */
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
+/**
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
 
-%clearfix {
+@mixin clearfix() {
   &:before,
   &:after {
-    content: " "; /* 1 */
+    content: " ";/* 1 */
     display: table; /* 2 */
   }
-
   &:after {
     clear: both;
   }
+}
+
+
+
+/**
+ * Box-sizing
+ *
+ * 1. Android ≤ 2.3, iOS ≤ 4
+ * Firefox ≤ 28
+ * Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1
+ */
+
+
+@mixin box-sizing($box-model: border-box) {
+  -webkit-box-sizing: $box-model; /* 1 */
+     -moz-box-sizing: $box-model; /* 2 */
+          box-sizing: $box-model; /* 3 */
+}
+
+
+
+/**
+ * Border-radius
+ *
+ * 2. Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+
+ *
+ * 3. useful if you don't want a bg color from leaking outside the border:
+ * Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+
+ */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius; /* 1 */
+          border-radius: $radius; /* 2 */
+  background-clip: padding-box;  /* 3 */
+}
+
+
+
+/**
+ * Center-align a block level element
+ */
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

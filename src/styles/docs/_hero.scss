@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #HERO
+   ========================================================================== */
+
+.sg-hero {
+  padding: 20px 0;
+  color: #fff;
+  background-color: $color-primary;
+
+  &__header {
+    margin-bottom: .2em;
+    font-size: 60px;
+  }
+
+  &__description {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+}

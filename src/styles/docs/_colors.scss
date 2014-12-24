@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .sg-color {
-  @extend %clearfix;
+  @include clearfix();
   padding: 0;
   list-style: none;
 

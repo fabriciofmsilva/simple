@@ -4,13 +4,40 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     copy: {
-      files: {
-        expand: true,
-        cwd: 'src/',
-        src: ['**/*', '!styles/**'],
-        dest: 'dist/'
+      main: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/',
+            src: ['**/*', '!images/**', '!styles/**'],
+            dest: 'dist/'
+          }
+        ]
+      },
+      images: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/images',
+            src: ['**/*'],
+            dest: 'dist/img'
+          }
+        ]
+      },
+      cssAsScss: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/styles/bower_components',
+            src: ['**/*.css', '!**/*.min.css'],
+            dest: 'src/styles/bower_components',
+            filter: 'isFile',
+            ext: ".scss"
+          }
+        ]
       }
     },
+
 
     sass: {
       dev: {
@@ -22,6 +49,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
 
     watch: {
       javacript: {
@@ -46,7 +74,13 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', [
     'sass',
-    'copy'
+    'copy:main',
+    'copy:images'
+    ]
+  );
+
+  grunt.registerTask('cssAsScss', [
+    'copy:cssAsScss'
     ]
   );
 

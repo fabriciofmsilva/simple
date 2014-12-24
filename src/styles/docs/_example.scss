@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #EXAMPLE
+   ========================================================================== */
+
+.sg-example {
+  padding: 10px;
+  border: 1px solid map-get($color-palette, gray);
+
+  &:before {
+    display: block;
+    margin-bottom: 1em;
+    font-size: .8em;
+    color: map-get($color-palette, gray);
+    text-transform: uppercase;
+    content: "Example";
+  }
+
+  & + .highlight {
+    margin-bottom: 1em;
+    border-top: none;
+  }
+}
+
+.highlight {
+  padding: 10px;
+  background-color: lighten(map-get($color-palette, gray), 35%);
+  border: 1px solid map-get($color-palette, gray);
+}

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #IMAGES
+   ========================================================================== */
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+
+
+/**
+ * Image shapes
+ */
+
+.img {
+  &--rounded {
+    border-radius: $border-radius-large;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--thumbnail {
+    padding: 4px;
+    border: 1px solid map-get($color-palette, gray);
+  }
+}

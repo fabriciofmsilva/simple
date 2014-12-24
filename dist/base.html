@@ -18,11 +18,32 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <h1>Base (Atoms)</h1>
-      <h2>Global</h2>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <a href="index.html">home</a>
+          <a href="base.html">base</a>
+          <a href="objects.html">objects</a>
+          <a href="components.html">components</a>
+        </nav>
+      </div>
+    </header>
 
-      <h3 class="page__header">Colors</h3>
+
+
+    <div class="sg-hero">
+      <div class="container">
+        <h1 class="sg-hero__header">Base</h1>
+        <p class="sg-hero__description">Atoms</p>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <h1 class="page__header">Global</h1>
+
+      <h2>Colors</h2>
       <ul class="sg-color">
         <li class="sg-color__item">
           <div class="sg-color__swatch sg-color__swatch--red">
@@ -127,18 +148,646 @@
       </ul>
 
 
-      <h3 class="page__header">Fonts</h3>
+
+      <h2>Fonts</h2>
       <p class="sg-font--primary">Primary font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</p>
       <p class="sg-font--primary"><em>Primary font italic: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</em></p>
       <p class="sg-font--primary"><strong>Primary font bold: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</strong></p>
       <p class="sg-font--secondary">Secondary font: Georgia, Times, "Times New Roman", serif;</p>
       <p class="sg-font--secondary"><em>Secondary font italic: Georgia, Times, "Times New Roman", serif;</em></p>
       <p class="sg-font--secondary"><strong>Secondary font bold; Georgia, Times, "Times New Roman", serif;</strong></p>
+
+
+
+      <h2>Animations</h2>
+      <div class="demo-animate animate-fade"><strong>Fade:</strong> Duration: 0.3s Easing: ease-out (Hover to see effect)</div>
+      <div class="demo-animate animate-move"><div class="demo-shape"></div><strong>Movement:</strong> Duration: 0.8s  Easing: ease-in-out; (Hover to see effect)</div>
+
+
+
+      <h2>Visibility</h2>
+      <p class="hide-small">This text is hidden on smaller screens</p>
+      <p class="hide-med hide-large"><em>This text is only visible on smaller screens</em></p>
+      <p class="hide-med">This text is hidden on medium screens only</p>
+      <p class="hide-small hide-large"><em>This text is only visible on medium screens</em></p>
+      <p class="hide-large">This text is hidden on large screens</p>
+      <p class="hide-small hide-med"><em>This text is only visible on large screens</em></p>
+
+
+
+
+
+      <h1 class="page__header">Typography</h1>
+
+      <h3>Headings</h3>
+      <div class="sg-example">
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+  &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+  &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+  &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+  &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+  &lt;h6&gt;Heading Level 6&lt;/h6&gt;</pre>
+      </div>
+
+
+
+      <h3>Paragraph</h3>
+      <div class="sg-example">
+        <p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;p&gt;A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.&lt;/p&gt;</pre>
+      </div>
+
+
+      <div class="sg-example">
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+      </div>
+
+
+
+      <h3>Blockquote</h3>
+      <div class="sg-example">
+        <blockquote>
+          <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.</p>
+        </blockquote>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;blockquote&gt;
+    &lt;p&gt;A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.  &lt;/p&gt;
+  &lt;/blockquote&gt;</pre>
+      </div>
+
+
+
+      <h3>Inline Elements</h3>
+      <div class="sg-example">
+        <p><a href="#">This is a text link</a></p>
+        <p><strong>Strong is used to indicate strong importance</strong></p>
+        <p><em>This text has added emphasis</em></p>
+        <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+        <p>The <i>i element</i> is text that is set off from the normal text</p>
+        <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+        <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+        <p><s>This text has a strikethrough</s></p>
+        <p>Superscript<sup>&reg;</sup></p>
+        <p>Subscript for things like H<sub>2</sub>O</p>
+        <p><small>This small text is small for for fine print, etc.</small></p>
+        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+        <p>Keybord input: <kbd>Cmd</kbd></p>
+        <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+        <p><cite>This is a citation</cite>
+        </p><p>The <dfn>dfn element</dfn> indicates a definition.</p>
+        <p>The <mark>mark element</mark> indicates a highlight</p>
+        <p><code>This is what inline code looks like.</code></p>
+        <p><samp>This is sample output from a computer program</samp></p>
+        <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+</pre>
+      </div>
+
+
+
+      <h3>Time</h3>
+      <div class="sg-example">
+        <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;time&gt;</pre>
+      </div>
+
+
+
+      <h3>Preformatted Text</h3>
+      <div class="sg-example">
+        <pre>
+  P R E F O R M A T T E D T E X T
+  ! " # $ % &amp; ' ( ) * + , - . /
+  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+  @ A B C D E F G H I J K L M N O
+  P Q R S T U V W X Y Z [ \ ] ^ _
+  ` a b c d e f g h i j k l m n o
+  p q r s t u v w x y z { | } ~
+        </pre>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;pre&gt;</pre>
+      </div>
+
+
+
+      <h3>Hr</h3>
+      <div class="sg-example">
+        <hr>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;hr&gt;</pre>
+      </div>
+
+
+
+
+
+      <h1 class="page__header">Lists</h1>
+
+      <h3>Unordered</h3>
+      <div class="sg-example">
+        <ul>
+          <li>This is a list item in an unordered list</li>
+          <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+          <li>
+            Lists can be nested inside of each other
+            <ul>
+              <li>This is a nested list item</li>
+              <li>This is another nested list item in an unordered list</li>
+            </ul>
+          </li>
+          <li>This is the last list item</li>
+        </ul>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;ul&gt;
+    &lt;li&gt;This is a list item in an unordered list&lt;/li&gt;
+    &lt;li&gt;An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. &lt;/li&gt;
+    &lt;li&gt;
+      Lists can be nested inside of each other
+      &lt;ul&gt;
+        &lt;li&gt;This is a nested list item&lt;/li&gt;
+        &lt;li&gt;This is another nested list item in an unordered list&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;This is the last list item&lt;/li&gt;
+  &lt;/ul&gt;</pre>
+      </div>
+
+
+
+      <h3>Ordered</h3>
+      <div class="sg-example">
+        <ol>
+          <li>This is a list item in an ordered list</li>
+          <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+          <li>
+            Lists can be nested inside of each other
+            <ol>
+              <li>This is a nested list item</li>
+              <li>This is another nested list item in an ordered list</li>
+            </ol>
+          </li>
+          <li>This is the last list item</li>
+        </ol>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;ol&gt;
+    &lt;li&gt;This is a list item in an ordered list&lt;/li&gt;
+    &lt;li&gt;An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.&lt;/li&gt;
+    &lt;li&gt;
+      Lists can be nested inside of each other
+      &lt;ol&gt;
+        &lt;li&gt;This is a nested list item&lt;/li&gt;
+        &lt;li&gt;This is another nested list item in an ordered list&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;This is the last list item&lt;/li&gt;
+  &lt;/ol&gt;</pre>
+      </div>
+
+
+
+      <h3>Definition</h3>
+      <div class="sg-example">
+        <dl>
+          <dt>Definition List</dt>
+          <dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
+          <dt>This is a term.</dt>
+          <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+          <dt>Here is another term.</dt>
+          <dd>And it gets a definition too, which is this line.</dd>
+          <dt>Here is term that shares a definition with the term below.</dt>
+          <dd>And it gets a definition too, which is this line.</dd>
+        </dl>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;dl&gt;
+    &lt;dt&gt;Definition List&lt;/dt&gt;
+    &lt;dd&gt;A number of connected items or names written or printed consecutively, typically one below the other.&lt;/dd&gt;
+    &lt;dt&gt;This is a term.&lt;/dt&gt;
+    &lt;dd&gt;This is the definition of that term, which both live in a &lt;code&gt;dl&lt;/code&gt;.&lt;/dd&gt;
+    &lt;dt&gt;Here is another term.&lt;/dt&gt;
+    &lt;dd&gt;And it gets a definition too, which is this line.&lt;/dd&gt;
+    &lt;dt&gt;Here is term that shares a definition with the term below.&lt;/dt&gt;
+    &lt;dd&gt;And it gets a definition too, which is this line.&lt;/dd&gt;
+  &lt;/dl&gt;</pre>
+      </div>
+
+
+
+
+
+      <h1 class="page__header">Images</h1>
+
+      <h2>Logo</h2>
+      <div class="sg-example">
+        <img src="holder.js/350x100/text:logo" alt="Logo">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Landscape 4x3</h2>
+      <div class="sg-example">
+        <img src="holder.js/600x450/" alt="4x3">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Landscape 16x9</h2>
+      <div class="sg-example">
+      <img src="holder.js/1280x720/" alt="16:9">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Square</h2>
+      <div class="sg-example">
+      <img src="holder.js/600x600/" alt="Square">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Avatar</h2>
+      <div class="sg-example">
+      <img src="img/img_avatar.png" alt="Avatar">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Icons</h2>
+      <div class="sg-example">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Loading Icon</h2>
+      <div class="sg-example">
+      <img src="img/ajax-loader.gif" alt="Loading">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Favicon</h2>
+      <div class="sg-example">
+      <img src="img/favicon_16x16.jpg" alt="Favicon">
+      <img src="img/favicon_32x32.jpg" alt="Favicon">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;img&gt;</pre>
+      </div>
+
+
+
+      <h2>Image shapes</h2>
+      <div class="sg-example">
+        <img src="holder.js/140x140" alt="140x140" class="img--rounded">
+        <img src="holder.js/140x140" alt="140x140" class="img--circle">
+        <img src="holder.js/140x140" alt="140x140" class="img--thumbnail">
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;img src="..." alt="..." class="img-rounded"&gt;
+  &lt;img src="..." alt="..." class="img-circle"&gt;
+  &lt;img src="..." alt="..." class="img-thumbnail"&gt;</pre>
+      </div>
+
+
+
+
+
+      <h1 class="page__header">Tables</h1>
+
+      <h2>Table</h2>
+      <div class="sg-example">
+        <table>
+          <caption>Optional table caption.</caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@johndoe</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@johndoe</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@johndoe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;table&gt;</pre>
+      </div>
+
+
+
+
+
+      <h1 class="page__header">Forms</h1>
+
+      <h2>Text Fields</h2>
+      <fieldset>
+        <div class="form__group">
+          <label for="text">Text Input <abbr title="Required">*</abbr></label>
+          <input class="form__control" id="text" type="text" placeholder="Text Input">
+        </div>
+        <div class="form__group">
+          <label for="password">Password</label>
+          <input class="form__control" id="password" type="password" placeholder="Type your Password">
+        </div>
+        <div class="form__group">
+          <label for="webaddress">Web Address</label>
+          <input class="form__control" id="webaddress" type="url" placeholder="http://yoursite.com">
+        </div>
+        <div class="form__group">
+          <label for="emailaddress">Email Address</label>
+          <input class="form__control" id="emailaddress" type="email" placeholder="name@email.com">
+        </div>
+        <div class="form__group">
+          <label for="search">Search</label>
+          <input class="form__control" id="search" type="search" placeholder="Enter Search Term">
+        </div>
+        <div class="form__group">
+          <label for="number">Number Input <abbr title="Required">*</abbr></label>
+          <input class="form__control" id="number" type="number" placeholder="Enter a Number" pattern="[0-9]*">
+        </div>
+        <div class="form__group">
+          <label for="textarea">Textarea</label>
+          <textarea class="form__control" id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+        </div>
+        <div class="form__group">
+          <label for="errorInput" class="error">Error Input</label>
+          <input class="form__control" id="errorInput" class="is-error" type="text" placeholder="Text Input">
+        </div>
+        <div class="form__group">
+          <label for="validInput" class="valid">Valid</label>
+          <input class="form__control" id="validInput" class="is-valid" type="text" placeholder="Text Input">
+        </div>
+      </fieldset>
+
+
+      <h3>Select Menu</h3>
+      <div class="sg-example">
+        <fieldset>
+          <select class="form__control" id="select">
+            <optgroup label="Option Group">
+              <option>Option One</option>
+              <option>Option Two</option>
+              <option>Option Three</option>
+            </optgroup>
+          </select>
+        </fieldset>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;select&gt;</pre>
+      </div>
+
+
+      <div class="sg-example">
+        <fieldset>
+          <select class="form__control" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;select&gt;</pre>
+      </div>
+
+
+
+      <h3>Checkbox</h3>
+      <div class="sg-example">
+        <form action="#">
+          <fieldset class="options">
+            <legend>Checkbox <abbr title="Required">*</abbr></legend>
+              <div class="form__checkbox">
+                <label for="checkbox1">
+                  <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+                  Choice A
+                </label>
+              </div>
+              <div class="form__checkbox">
+                <label for="checkbox2">
+                  <input id="checkbox2" name="checkbox" type="checkbox">
+                  Choice B
+                </label>
+              </div>
+              <div class="form__checkbox">
+                <label for="checkbox3">
+                  <input id="checkbox3" name="checkbox" type="checkbox">
+                  Choice C
+                </label>
+              </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input type="checkbox"&gt;</pre>
+      </div>
+
+
+
+      <h3>Radio Buttons</h3>
+      <div class="sg-example">
+        <form action="#">
+          <fieldset class="options">
+            <legend>Radio</legend>
+              <div class="form__radio">
+                <label for="radio1">
+                  <input id="radio1" name="radio" type="radio" class="radio" checked="checked">
+                  Option 1
+                </label>
+              </div>
+              <div class="form__radio">
+                <label for="radio2">
+                  <input id="radio2" name="radio" type="radio" class="radio">
+                  Option 2
+                </label>
+              </div>
+              <div class="form__radio">
+                <label for="radio3">
+                  <input id="radio3" name="radio" type="radio" class="radio">
+                  Option 3
+                </label>
+              </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input type="radio"&gt;</pre>
+      </div>
+
+
+
+      <h3>Html5 Inputs</h3>
+      <div class="sg-example">
+        <fieldset>
+          <div class="field-container"><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></div>
+          <div class="field-container"><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
+          <div class="field-container"><label for="ir">Range input</label> <input type="range" id="ir" value="10"></div>
+          <div class="field-container"><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></div>
+          <div class="field-container"><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></div>
+          <div class="field-container"><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></div>
+          <div class="field-container"><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></div>
+          <div class="field-container"><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></div>
+        </fieldset>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+  &lt;input&gt;</pre>
+      </div>
+
+
+
+
+
+      <h1 class="page__header">Buttons</h1>
+
+      <h2>Button tags</h2>
+      <div class="sg-example">
+        <a class="btn" href="#" role="button">Link</a>
+        <button class="btn" type="submit">Button</button>
+        <input class="btn" type="button" value="Input">
+        <input class="btn" type="submit" value="Submit">
+      </div>
+      <div class="highlight"></div>
+
+
+      <h2>Options</h2>
+      <div class="sg-example">
+        <button type="button" class="btn">Default</button>
+        <button type="button" class="btn btn--primary">Primary</button>
+        <button type="button" class="btn btn--success">Success</button>
+        <button type="button" class="btn btn--info">Info</button>
+        <button type="button" class="btn btn--warning">Warning</button>
+        <button type="button" class="btn btn--danger">Danger</button>
+        <button type="button" class="btn btn--link">Link</button>
+      </div>
+      <div class="highlight"></div>
+
+      <h2>Sizes</h2>
+      <div class="sg-example">
+        <button type="button" class="btn btn--lg">Large button</button>
+        <button type="button" class="btn">Default button</button>
+        <button type="button" class="btn btn--sm">Small button</button>
+        <button type="button" class="btn btn--xs">Extra small button</button>
+      </div>
+      <div class="highlight"></div>
+
+<!--
+      <p><a href="#" class="btn">Button</a></p>
+      <p><a href="#" class="btn alt">Alternate Button</a></p>
+      <p><a href="#" class="btn disabled">Disabled Button</a></p>
+      <p><a href="#" class="text-btn">Text Button</a></p>
+-->
     </div>
 
 
     <script src="scripts/main.js"></script>
-
+    <script src="../bower_components/holderjs/holder.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script>
+    // (function(){
+    //   var prettify = document.querySelectorAll('pre');
+    //   for(var i = 0; i < prettify.length; i++) {
+    //     prettify[i].classList.add('prettyprint');
+    //   }
+    //   prettyPrint();
+    // })();
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

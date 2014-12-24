@@ -9,10 +9,8 @@
   "main": "main.less",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "normalize.css": "~3.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "normalize.css": "~3.0.2"
+    "holderjs": "~2.4.1"
   }
 }

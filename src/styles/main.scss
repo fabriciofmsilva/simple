@@ -30,7 +30,7 @@
  * Images...............inuitcss images
  * Quotes...............Styling for blockquotes, etc.
  *
- * MODULES (MOLECULES)
+ * OBJECTS (MOLECULES)
  * Wrappers.............Wrappers and page constraints.
  * Buttons..............inuitcss’ buttons module.
  * Layout...............inuitcss’ layout tool.
@@ -85,7 +85,7 @@
 /* ==========================================================================
    #GENERIC
    ========================================================================== */
-@import "bower_components/normalize.css/normalize.css";
+@import "bower_components/normalize.css/normalize.scss";
 
 
 
@@ -94,8 +94,12 @@
 /* ==========================================================================
    #BASE
    ========================================================================== */
-@import "base/global";
-@import "base/text";
+@import "base/scaffolding";
+@import "base/type";
+@import "base/images";
+@import "base/tables";
+@import "base/forms";
+@import "base/buttons";
 
 
 
@@ -121,10 +125,13 @@
 
 
 /* ==========================================================================
-   #DOC
+   #DOCS
    ========================================================================== */
-@import "doc/colors";
-@import "doc/fonts";
+@import "docs/colors";
+@import "docs/fonts";
+@import "docs/hero";
+@import "docs/example";
+@import "docs/prettify";
 
 
 

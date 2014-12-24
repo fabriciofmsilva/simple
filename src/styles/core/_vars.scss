@@ -89,6 +89,7 @@ $font-size-h6 : 14;
 
 
 $line-height-base : 1.4;
+$line-height-computed : ($font-size-base * $line-height-base);
 
 
 
@@ -119,6 +120,18 @@ $animation-move : all 0.8s ease-in-out;
 /**
  * Visibility
  */
+
+
+
+
+
+/**
+ * Components
+ */
+
+$border-radius-base  : 4px;
+$border-radius-large : 6px;
+$border-radius-small : 3px;
 
 
 

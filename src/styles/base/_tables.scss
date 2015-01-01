@@ -23,5 +23,6 @@ th {
 th,
 td {
   padding: 8px;
+  border: 1px solid map-get($color-palette, gray);
   vertical-align: top;
 }

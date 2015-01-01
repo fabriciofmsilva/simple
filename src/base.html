@@ -177,6 +177,58 @@
 
 
 
+      <h1 class="page_header">Grid System</h1>
+      <div class="row">
+        <div class="col-12"><div class="doc-col">.col-12</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-6"><div class="doc-col">.col-6</div></div>
+        <div class="col-6"><div class="doc-col">.col-6</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4"><div class="doc-col">.col-4</div></div>
+        <div class="col-4"><div class="doc-col">.col-4</div></div>
+        <div class="col-4"><div class="doc-col">.col-4</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"><div class="doc-col">.col-3</div></div>
+        <div class="col-3"><div class="doc-col">.col-3</div></div>
+        <div class="col-3"><div class="doc-col">.col-3</div></div>
+        <div class="col-3"><div class="doc-col">.col-3</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-5"><div class="doc-col">.col-5</div></div>
+        <div class="col-7"><div class="doc-col">.col-7</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4"><div class="doc-col">.col-4</div></div>
+        <div class="col-8"><div class="doc-col">.col-8</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"><div class="doc-col">.col-3</div></div>
+        <div class="col-9"><div class="doc-col">.col-9</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"><div class="doc-col">.col-2</div></div>
+        <div class="col-10"><div class="doc-col">.col-10</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"><div class="doc-col">.col-1</div></div>
+        <div class="col-11"><div class="doc-col">.col-11</div></div>
+      </div>
+
+
+
+
+
       <h1 class="page__header">Typography</h1>
 
       <h3>Headings</h3>
@@ -692,6 +744,20 @@
       </fieldset>
 
 
+      <h3>Datalist</h3>
+        <div class="form__group">
+          <label for="text">Text Input <abbr title="Required">*</abbr></label>
+          <input class="form__control" id="text" type="text" placeholder="Text Input" list="browsers">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </div>
+
+
       <h3>Select Menu</h3>
       <div class="sg-example">
         <fieldset>
@@ -997,6 +1063,50 @@
         <p><progress value="100" max="100">100%</progress> A progress displaying 100%.</p>
       </div>
       <div class="highlight"></div>
+
+
+
+
+
+      <h1 class="page__header">Dialog</h1>
+      <div class="sg-example">
+      <dialog>
+        <p>Greetings, one and all!</p>
+      </dialog>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;dialog&gt;
+  &lt;p&gt;Greetings, one and all!&lt;/p&gt;
+&lt;/dialog&gt;</pre>
+      </div>
+
+
+
+      <h1 class="page__header">Menu</h1>
+      <div class="sg-example">
+        <!-- A button, which displays a menu when clicked. -->
+        <button type="menu" menu="dropdown-menu">
+          Dropdown
+        </button>
+
+        <menu type="popup" id="dropdown-menu">
+          <menuitem label="Action">
+          <menuitem label="Another action">
+          <hr>
+          <menuitem label="Separated action">
+        </menu>
+      </div>
+      <div class="highlight">
+        <pre class="prettyprint">
+&lt;menu&gt;
+  &lt;menuitem&gt;
+&lt;/menu&gt;</pre>
+      </div>
+
+
+
+
     </div>
 
 

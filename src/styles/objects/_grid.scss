@@ -2,7 +2,71 @@
    #GRID
    ========================================================================== */
 
+/* Main Container. */
 .container {
   @include center-block;
   max-width: 1200px;
+}
+
+
+/* The Columns. */
+[class^="col-"] {
+  float: left;
+  padding: 0 $gutter;
+}
+
+/* The Row. */
+.row {
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+  content: " ";
+}
+
+/* Column Widths. */
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    width: ( 100 / $column-count ) * $i * 1%;
+  }
+}
+
+/* Special Classes. */
+.col-third {
+  width: ( 100 / 3 ) * 1%;
+}
+
+.col-two-third {
+  width: ( 100 / 3 ) * 2%;
+}
+
+.col-half {
+  width: ( 100 / 2 ) * 1%;
+}
+
+.col-quarter {
+  width: ( 100 / 4 ) * 1%;
+}
+
+
+
+/* Reponsive Behaviour */
+@media (max-width: 1024px) {
+  [class^="col-"] {
+    padding: 0 $gutter / 2;
+  }
+
+  .row {
+    margin-right: -$gutter / 2;
+    margin-left: -$gutter / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  [class^="col-"] {
+    width: 100%;
+  }
 }

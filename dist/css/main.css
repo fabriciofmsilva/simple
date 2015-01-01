@@ -97,7 +97,7 @@
  * Visibility
  */
 /**
- * Components
+ * Grid
  */
 /**
  * Components
@@ -570,6 +570,33 @@ th {
 }
 
 /**
+ * HTML
+ */
+html {
+  font-size: 1em;
+}
+
+/**
+ * Font Quality
+ */
+html,
+input,
+button,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Body
+ */
+body {
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+/**
  * Links
  */
 a {
@@ -600,7 +627,40 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 1.5em 0 0.5em;
   font-weight: 500;
+  line-height: 1.2;
+}
+
+h5,
+h6 {
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 0.707em;
 }
 
 /**
@@ -615,6 +675,10 @@ h6 {
 /**
  * Paragraph
  */
+p {
+  margin-bottom: 1.5em;
+}
+
 /**
  * Lead body copy
  */
@@ -625,6 +689,12 @@ h6 {
 /**
  * Quote Elements
  */
+blockquote {
+  margin-left: 1.5em;
+  font-style: italic;
+  color: #9e9e9e;
+}
+
 /**
  * Inline Elements
  */
@@ -640,6 +710,21 @@ h6 {
 /**
  * Hr
  */
+hr {
+  height: 1px;
+  margin: 1.5em 0;
+  background-color: #9e9e9e;
+  border: 0;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin: 0 0 1.5em 1.5em;
+}
+
 /* ==========================================================================
    #IMAGES
    ========================================================================== */

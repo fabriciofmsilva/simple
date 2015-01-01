@@ -13,31 +13,40 @@ h3,
 h4,
 h5,
 h6 {
+  margin: $baseline 0 .5em;
   font-weight: 500;
+  line-height: 1.2;
+}
+
+h5,
+h6 {
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h1 {
-
+  font-size: $font-size-h1;
 }
 
 h2 {
-
+  font-size: $font-size-h2;
 }
 
 h3 {
-
+  font-size: $font-size-h3;
 }
 
 h4 {
-
+  font-size: $font-size-h4;
 }
 
 h5 {
-
+  font-size: $font-size-h5;
 }
 
 h6 {
-
+  font-size: $font-size-h6;
 }
 
 
@@ -60,7 +69,7 @@ h6 {
  */
 
 p {
-
+  margin-bottom: $baseline;
 }
 
 
@@ -83,7 +92,9 @@ p {
  */
 
 blockquote {
-
+  margin-left: $baseline;
+  font-style: italic;
+  color: map-get($color-palette, gray);
 }
 
 q {
@@ -216,7 +227,10 @@ pre {
  */
 
 hr {
-
+  height: 1px;
+  margin: $baseline 0;
+  background-color: map-get($color-palette, gray);
+  border: 0;
 }
 
 

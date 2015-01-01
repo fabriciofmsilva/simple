@@ -71,6 +71,8 @@ $link-hover-decoration: underline;
  * Typography
  */
 
+$baseline: 1.5em;
+
 $font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif      : Georgia, Times, "Times New Roman", serif;
 $font-family-monospace  : Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -80,12 +82,12 @@ $font-size-base         : 16px;
 $font-size-small        : 14px;
 $font-size-large        : 18px;
 
-$font-size-h1 : 36px;
-$font-size-h2 : 30px;
-$font-size-h3 : 24px;
-$font-size-h4 : 18px;
+$font-size-h1 : 3.998em;
+$font-size-h2 : 2.827em;
+$font-size-h3 : 1.999em;
+$font-size-h4 : 1.414em;
 $font-size-h5 : $font-size-base;
-$font-size-h6 : 14;
+$font-size-h6 : .707em;
 
 
 $line-height-base : 1.4;
@@ -126,7 +128,7 @@ $animation-move : all 0.8s ease-in-out;
 
 
 /**
- * Components
+ * Grid
  */
 
 $column-count : 12;

@@ -24,6 +24,48 @@
 
 
 /**
+ * HTML
+ */
+
+html {
+  font-size: 1em;
+}
+
+
+
+
+
+/**
+ * Font Quality
+ */
+
+html,
+input,
+button,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+/**
+ * Body
+ */
+
+body {
+  color: $text-color;
+  font-family: $font-family-base;
+  line-height: $baseline;
+}
+
+
+
+
+
+/**
  * Links
  */
 

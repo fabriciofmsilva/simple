@@ -6,6 +6,11 @@
 .container {
   @include center-block;
   max-width: 1200px;
+
+  @media (max-width: 1200px) {
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+  }
 }
 
 

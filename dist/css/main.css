@@ -880,6 +880,12 @@ select[size] {
   margin-right: auto;
   max-width: 1200px;
 }
+@media (max-width: 1200px) {
+  .container {
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+  }
+}
 
 /* The Columns. */
 [class^="col-"] {

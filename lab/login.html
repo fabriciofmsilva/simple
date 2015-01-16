@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Login</title>
+  <meta name="description" content="Simple">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../dist/css/main.css">
+  <script src="../dist/scripts/vendor/modernizr-2.8.3.min.js"></script>
+  <style>
+    .form {
+      max-width: 40%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+  <form class="form" id="Login" action="#">
+    <fieldset>
+      <legend>Login</legend>
+      <div class="form__group">
+        <label for="user">User</label>
+        <input class="form__control" id="user" type="text" placeholder="User">
+      </div>
+      <div class="form__group">
+        <label for="password">Password</label>
+        <input class="form__control" id="password" type="password" placeholder="Password">
+      </div>
+      <button class="btn" name="commit" type="button">Login</button>
+    </fieldset>
+  </form>
+
+  <script src="js/controller/initialize.js"></script>
+  <script src="js/model/Login.js"></script>
+  <script src="js/view/login.js"></script>
+  <script>
+   window.addEventListener("load", pl.view.login.makeLogin);
+   Login.createTestData();
+  </script>
+</body>
+</html>
